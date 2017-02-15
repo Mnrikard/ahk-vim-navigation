@@ -17,7 +17,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ; Global variables
 inputNumber := " "
-lastCommand := {ShiftDown}{ShiftUp}
+lastCommand = {ShiftDown}{ShiftUp}
 
 ; Notification GUI {{{
 notify(text, time = 2000)
@@ -46,7 +46,7 @@ $Esc::
         Gui, 99:+AlwaysOnTop -Caption +ToolWindow +Disabled -SysMenu +Owner
         ; Add and set the OSD Text
         Gui, 99:Font, s15 bold
-        Gui, 99:Add, Text, cAA0000, VI-Mode Activated (Esc to Exit)
+        Gui, 99:Add, Text, cAA0000, VI-NORMAL (Esc to Exit)
         ; OSD Background Color (Black)
         Gui, 99:Color, 000000
         Gui, 99:Show,NoActivate x0 y10, VIM-Mode Activated
